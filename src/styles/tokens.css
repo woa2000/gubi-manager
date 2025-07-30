@@ -1,0 +1,261 @@
+/**
+ * Design System Gubi 1.0 - Design Tokens
+ * Arquivo de tokens baseado no design system documentado
+ */
+
+:root {
+  /* === COLORS === */
+  
+  /* Brand Primary */
+  --gubi-purple: #5A439B;
+  --gubi-purple-dark: #4A3784;
+  --gubi-pink: #E85A9B;
+  --gubi-light-blue: #00A9E0;
+  --gubi-dark-blue: #2C3E50;
+
+  /* Neutrals */
+  --gubi-black: #111111;
+  --gubi-gray-900: #1F2933;
+  --gubi-gray-700: #3E4C59;
+  --gubi-gray-500: #7B8794;
+  --gubi-gray-300: #CBD2D9;
+  --gubi-gray-100: #F5F7FA;
+  --gubi-white: #FFFFFF;
+
+  /* Feedback States */
+  --gubi-success: #34C759;
+  --gubi-warning: #FFCC00;
+  --gubi-error: #FF3B30;
+  --gubi-info: #00A9E0;
+
+  /* === TYPOGRAPHY === */
+  
+  /* Font Families */
+  --gubi-font-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --gubi-font-accent: 'Space Grotesk', 'Poppins', sans-serif;
+
+  /* Font Sizes */
+  --gubi-font-size-display-1: 3.5rem; /* 56px */
+  --gubi-font-size-h1: 2.5rem; /* 40px */
+  --gubi-font-size-h2: 2rem; /* 32px */
+  --gubi-font-size-h3: 1.5rem; /* 24px */
+  --gubi-font-size-body-1: 1rem; /* 16px */
+  --gubi-font-size-body-2: 0.875rem; /* 14px */
+  --gubi-font-size-caption: 0.75rem; /* 12px */
+
+  /* Line Heights */
+  --gubi-line-height-display-1: 4rem; /* 64px */
+  --gubi-line-height-h1: 3rem; /* 48px */
+  --gubi-line-height-h2: 2.5rem; /* 40px */
+  --gubi-line-height-h3: 2rem; /* 32px */
+  --gubi-line-height-body-1: 1.5rem; /* 24px */
+  --gubi-line-height-body-2: 1.25rem; /* 20px */
+  --gubi-line-height-caption: 1rem; /* 16px */
+
+  /* Font Weights */
+  --gubi-font-weight-light: 300;
+  --gubi-font-weight-normal: 400;
+  --gubi-font-weight-medium: 500;
+  --gubi-font-weight-semibold: 600;
+  --gubi-font-weight-bold: 700;
+
+  /* === SPACING === */
+  
+  /* Spacing Scale (8px base) */
+  --gubi-space-0: 0;
+  --gubi-space-1: 0.125rem; /* 2px */
+  --gubi-space-2: 0.25rem; /* 4px */
+  --gubi-space-3: 0.5rem; /* 8px */
+  --gubi-space-4: 0.75rem; /* 12px */
+  --gubi-space-5: 1rem; /* 16px */
+  --gubi-space-6: 1.5rem; /* 24px */
+  --gubi-space-7: 2rem; /* 32px */
+  --gubi-space-8: 2.5rem; /* 40px */
+  --gubi-space-9: 3rem; /* 48px */
+  --gubi-space-10: 4rem; /* 64px */
+  --gubi-space-11: 5rem; /* 80px */
+  --gubi-space-12: 6rem; /* 96px */
+
+  /* === RADIUS === */
+  
+  --gubi-radius-xs: 0.125rem; /* 2px */
+  --gubi-radius-sm: 0.25rem; /* 4px */
+  --gubi-radius-md: 0.5rem; /* 8px */
+  --gubi-radius-lg: 1rem; /* 16px */
+  --gubi-radius-xl: 1.5rem; /* 24px */
+
+  /* === ELEVATION === */
+  
+  --gubi-elevation-0: none;
+  --gubi-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --gubi-elevation-2: 0 2px 8px rgba(0, 0, 0, 0.10);
+  --gubi-elevation-3: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* === MOTION === */
+  
+  --gubi-duration-fast: 150ms;
+  --gubi-duration-base: 200ms;
+  --gubi-duration-slow: 300ms;
+  
+  --gubi-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* === BREAKPOINTS === */
+  /* Note: Use with media queries */
+  
+  --gubi-breakpoint-xs: 0;
+  --gubi-breakpoint-sm: 480px;
+  --gubi-breakpoint-md: 768px;
+  --gubi-breakpoint-lg: 1024px;
+  --gubi-breakpoint-xl: 1440px;
+  --gubi-breakpoint-xxl: 1920px;
+
+  /* === SEMANTIC COLORS === */
+  /* Mapping tokens to semantic uses */
+  
+  /* Primary */
+  --color-primary: var(--gubi-purple);
+  --color-primary-hover: var(--gubi-purple-dark);
+  --color-primary-foreground: var(--gubi-white);
+  
+  /* Secondary */
+  --color-secondary: var(--gubi-pink);
+  --color-secondary-hover: #d14a89;
+  --color-secondary-foreground: var(--gubi-white);
+  
+  /* Accent */
+  --color-accent: var(--gubi-light-blue);
+  --color-accent-hover: #008bc7;
+  --color-accent-foreground: var(--gubi-white);
+  
+  /* Background */
+  --color-background: var(--gubi-white);
+  --color-background-secondary: var(--gubi-gray-100);
+  
+  /* Text */
+  --color-text-primary: var(--gubi-gray-900);
+  --color-text-secondary: var(--gubi-gray-700);
+  --color-text-muted: var(--gubi-gray-500);
+  
+  /* Border */
+  --color-border: var(--gubi-gray-300);
+  --color-border-light: var(--gubi-gray-100);
+  
+  /* States */
+  --color-success: var(--gubi-success);
+  --color-warning: var(--gubi-warning);
+  --color-error: var(--gubi-error);
+  --color-info: var(--gubi-info);
+}
+
+/* === DARK MODE === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode adjustments */
+    --color-background: var(--gubi-gray-900);
+    --color-background-secondary: var(--gubi-gray-700);
+    --color-text-primary: var(--gubi-white);
+    --color-text-secondary: var(--gubi-gray-300);
+    --color-text-muted: var(--gubi-gray-500);
+    --color-border: var(--gubi-gray-700);
+    --color-border-light: var(--gubi-gray-700);
+  }
+}
+
+/* === UTILITY CLASSES === */
+
+/* Typography Utilities */
+.gubi-display-1 {
+  font-family: var(--gubi-font-accent);
+  font-size: var(--gubi-font-size-display-1);
+  line-height: var(--gubi-line-height-display-1);
+  font-weight: var(--gubi-font-weight-bold);
+}
+
+.gubi-h1 {
+  font-family: var(--gubi-font-accent);
+  font-size: var(--gubi-font-size-h1);
+  line-height: var(--gubi-line-height-h1);
+  font-weight: var(--gubi-font-weight-bold);
+}
+
+.gubi-h2 {
+  font-family: var(--gubi-font-accent);
+  font-size: var(--gubi-font-size-h2);
+  line-height: var(--gubi-line-height-h2);
+  font-weight: var(--gubi-font-weight-semibold);
+}
+
+.gubi-h3 {
+  font-family: var(--gubi-font-accent);
+  font-size: var(--gubi-font-size-h3);
+  line-height: var(--gubi-line-height-h3);
+  font-weight: var(--gubi-font-weight-semibold);
+}
+
+.gubi-body-1 {
+  font-family: var(--gubi-font-base);
+  font-size: var(--gubi-font-size-body-1);
+  line-height: var(--gubi-line-height-body-1);
+  font-weight: var(--gubi-font-weight-normal);
+}
+
+.gubi-body-2 {
+  font-family: var(--gubi-font-base);
+  font-size: var(--gubi-font-size-body-2);
+  line-height: var(--gubi-line-height-body-2);
+  font-weight: var(--gubi-font-weight-normal);
+}
+
+.gubi-caption {
+  font-family: var(--gubi-font-base);
+  font-size: var(--gubi-font-size-caption);
+  line-height: var(--gubi-line-height-caption);
+  font-weight: var(--gubi-font-weight-normal);
+}
+
+/* Motion Utilities */
+.gubi-transition {
+  transition-duration: var(--gubi-duration-base);
+  transition-timing-function: var(--gubi-easing);
+}
+
+.gubi-transition-fast {
+  transition-duration: var(--gubi-duration-fast);
+  transition-timing-function: var(--gubi-easing);
+}
+
+.gubi-transition-slow {
+  transition-duration: var(--gubi-duration-slow);
+  transition-timing-function: var(--gubi-easing);
+}
+
+/* Responsive Design Helpers */
+@media (max-width: 479px) {
+  :root {
+    /* Mobile typography adjustments */
+    --gubi-font-size-display-1: 2.5rem; /* 40px */
+    --gubi-font-size-h1: 2rem; /* 32px */
+    --gubi-font-size-h2: 1.75rem; /* 28px */
+    --gubi-font-size-h3: 1.375rem; /* 22px */
+    
+    --gubi-line-height-display-1: 3rem; /* 48px */
+    --gubi-line-height-h1: 2.5rem; /* 40px */
+    --gubi-line-height-h2: 2.25rem; /* 36px */
+    --gubi-line-height-h3: 1.875rem; /* 30px */
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .gubi-transition,
+  .gubi-transition-fast,
+  .gubi-transition-slow {
+    transition: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

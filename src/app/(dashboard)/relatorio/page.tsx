@@ -134,7 +134,7 @@ export default function RelatorioPage() {
             description="Faixas etárias dos jovens"
           />
           
-          <HorizontalBarChart
+          <BarChartComponent
             data={utils.getPercentageData(data.demographics.country.slice(0, 8), 'country')}
             title="Principais Países"
             description="Top 8 países de origem"
@@ -160,7 +160,7 @@ export default function RelatorioPage() {
             description="Jovens que desejam cursar ensino superior"
           />
           
-          <HorizontalBarChart
+          <BarChartComponent
             data={utils.getPercentageData(data.education.studyFormat, 'studyFormat')}
             title="Formato de Estudo Preferido"
             description="Modalidades de ensino preferidas"
@@ -174,7 +174,7 @@ export default function RelatorioPage() {
           4. Interesses e Objetivos Profissionais
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <HorizontalBarChart
+          <BarChartComponent
             data={utils.getChartData(data.interests.areas, 10)}
             title="Top 10 Áreas de Interesse"
             description="Principais áreas profissionais de interesse"
@@ -216,14 +216,14 @@ export default function RelatorioPage() {
           5. Competências e Habilidades
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <HorizontalBarChart
+          <BarChartComponent
             data={utils.getChartData(data.skills.soft, 10)}
             title="Top 10 Soft Skills"
             description="Habilidades comportamentais mais presentes"
             height={400}
           />
           
-          <HorizontalBarChart
+          <BarChartComponent
             data={utils.getChartData(data.skills.hard, 10)}
             title="Top 10 Hard Skills"
             description="Habilidades técnicas mais presentes"

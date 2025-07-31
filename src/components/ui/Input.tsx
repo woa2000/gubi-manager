@@ -26,9 +26,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
 
   // Base styles following Gubi Design System
   const baseInputStyles = [
-    'w-full px-gubi-4 py-gubi-3 rounded-gubi-md border',
-    'font-gubi-base text-gubi-body-1',
-    'transition-all duration-gubi-base ease-gubi',
+    'w-full px-4 py-3 rounded-lg border',
+    'font-gubi-base text-base',
+    'transition-all duration-200 ease-out',
     'focus:outline-none focus:ring-2 focus:ring-offset-1',
     'disabled:bg-gubi-gray-100 disabled:text-gubi-gray-500 disabled:cursor-not-allowed',
     'placeholder:text-gubi-gray-500',
@@ -38,12 +38,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
   const stateStyles = hasError
     ? [
         'border-gubi-error text-gubi-error',
-        'focus:border-gubi-error focus:ring-gubi-error/20',
+        'focus:border-gubi-error focus:ring-red-200',
       ].join(' ')
     : [
         'border-gubi-gray-300 text-gubi-gray-900',
         'hover:border-gubi-gray-500',
-        'focus:border-gubi-purple focus:ring-gubi-purple/20',
+        'focus:border-gubi-purple focus:ring-purple-200',
       ].join(' ');
 
   // Icon styles
@@ -64,7 +64,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
       {label && (
         <label 
           htmlFor={inputId}
-          className="block gubi-body-2 font-medium text-gubi-gray-900 mb-gubi-2"
+          className="block text-sm font-medium text-gubi-gray-900 mb-2"
         >
           {label}
           {props.required && <span className="text-gubi-error ml-1">*</span>}
@@ -75,7 +75,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
       <div className="relative">
         {/* Left Icon */}
         {LeftIcon && (
-          <div className="absolute inset-y-0 left-0 pl-gubi-3 flex items-center pointer-events-none">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <LeftIcon className="h-5 w-5 text-gubi-gray-500" />
           </div>
         )}
@@ -91,7 +91,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
         {/* Right Icon */}
         {RightIcon && (
           <div 
-            className={`absolute inset-y-0 right-0 pr-gubi-3 flex items-center ${
+            className={`absolute inset-y-0 right-0 pr-3 flex items-center ${
               onRightIconClick ? 'cursor-pointer' : 'pointer-events-none'
             }`}
             onClick={onRightIconClick}
@@ -105,13 +105,13 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
 
       {/* Hint or Error Message */}
       {(hint || error) && (
-        <div className="mt-gubi-2">
+        <div className="mt-2">
           {error ? (
-            <p className="gubi-caption text-gubi-error" role="alert">
+            <p className="text-xs text-gubi-error" role="alert">
               {error}
             </p>
           ) : hint ? (
-            <p className="gubi-caption text-gubi-gray-500">
+            <p className="text-xs text-gubi-gray-500">
               {hint}
             </p>
           ) : null}

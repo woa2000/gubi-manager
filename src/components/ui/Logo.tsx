@@ -1,7 +1,15 @@
-const Logo: React.FC = () => {
+import Image from 'next/image';
+
+const Logo: React.FC<{ variant?: 'light' | 'dark' }> = ({ variant = 'dark' }) => {
   return (
-    <div className="text-dark-brown font-display font-semibold text-2xl uppercase">
-      Woof®
+    <div className="flex items-center space-x-3">
+      <Image
+        src="/images/logo-gubi.png"
+        alt="Gubi Logo"
+        width={120}
+        height={120}
+        className="object-contain"
+      />      
     </div>
   );
 };

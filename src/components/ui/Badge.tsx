@@ -16,25 +16,25 @@ const Badge: React.FC<BadgeProps> = ({
   // Base styles following Gubi Design System
   const baseStyles = [
     'inline-flex items-center font-medium rounded-full',
-    'transition-all duration-gubi-fast ease-gubi',
+    'transition-all duration-150 ease-out',
   ].join(' ');
 
   // Size variants
   const sizeStyles = {
-    sm: 'px-gubi-2 py-gubi-1 text-xs',
-    md: 'px-gubi-3 py-gubi-1 gubi-caption',
-    lg: 'px-gubi-4 py-gubi-2 gubi-body-2',
+    sm: 'px-2 py-1 text-xs',
+    md: 'px-3 py-1 text-xs',
+    lg: 'px-4 py-2 text-sm',
   };
 
   // Color variants using Gubi Design System colors
   const variantStyles = {
-    default: 'bg-gubi-gray-100 text-gubi-gray-700 border border-gubi-gray-300',
+    default: 'bg-[#F5F7FA] text-[#7B8794] border border-[#CBD2D9]',
     success: 'bg-green-100 text-green-800 border border-green-200',
     warning: 'bg-yellow-100 text-yellow-800 border border-yellow-200',
     error: 'bg-red-100 text-red-800 border border-red-200',
     info: 'bg-blue-100 text-blue-800 border border-blue-200',
-    purple: 'bg-purple-100 text-gubi-purple border border-purple-200',
-    pink: 'bg-pink-100 text-gubi-pink border border-pink-200',
+    purple: 'bg-purple-100 text-[#5A439B] border border-purple-200',
+    pink: 'bg-pink-100 text-[#E85A9B] border border-pink-200',
   };
 
   const combinedClassName = [

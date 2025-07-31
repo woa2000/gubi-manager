@@ -4,6 +4,9 @@
 /* Import Gubi Design System Tokens */
 @import "../styles/tokens.css";
 
+/* Teste temporário das cores Gubi */
+@import "../styles/test-gubi-colors.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

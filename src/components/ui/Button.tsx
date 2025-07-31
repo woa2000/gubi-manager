@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
   // Base styles following Gubi Design System
   const baseStyles = [
     'inline-flex items-center justify-center font-medium',
-    'transition-all duration-gubi-base ease-gubi',
+    'transition-all duration-200 ease-out',
     'border border-transparent',
     'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
     'disabled:opacity-50 disabled:cursor-not-allowed',
@@ -31,45 +31,45 @@ const Button: React.FC<ButtonProps> = ({
 
   // Size variants
   const sizeStyles = {
-    sm: 'px-gubi-4 py-gubi-2 text-gubi-body-2 rounded-gubi-sm h-8', // 32px
-    md: 'px-gubi-6 py-gubi-3 text-gubi-body-1 rounded-gubi-md h-10', // 40px  
-    lg: 'px-gubi-7 py-gubi-4 text-gubi-body-1 rounded-gubi-md h-12', // 48px
+    sm: 'px-3 py-2 text-sm rounded-md h-8', // 32px
+    md: 'px-6 py-3 text-base rounded-lg h-10', // 40px  
+    lg: 'px-8 py-4 text-base rounded-lg h-12', // 48px
   };
 
   // Variant styles using Gubi Design System colors
   const variantStyles = {
     primary: [
-      'bg-gubi-purple text-gubi-white shadow-gubi-1',
-      'hover:bg-gubi-purple-dark hover:shadow-gubi-2',
-      'active:bg-gubi-purple-dark active:shadow-gubi-1',
-      'focus-visible:outline-gubi-purple',
+      'bg-[#5A439B] text-white shadow-sm',
+      'hover:bg-[#4A3784] hover:shadow-md',
+      'active:bg-[#4A3784] active:shadow-sm',
+      'focus-visible:outline-[#5A439B]',
     ].join(' '),
     
     secondary: [
-      'bg-gubi-pink text-gubi-white shadow-gubi-1',
-      'hover:bg-[#d14a89] hover:shadow-gubi-2',
-      'active:bg-[#d14a89] active:shadow-gubi-1', 
-      'focus-visible:outline-gubi-pink',
+      'bg-[#E85A9B] text-white shadow-sm',
+      'hover:bg-[#d14a89] hover:shadow-md',
+      'active:bg-[#d14a89] active:shadow-sm', 
+      'focus-visible:outline-[#E85A9B]',
     ].join(' '),
     
     tertiary: [
-      'bg-transparent text-gubi-purple border-gubi-purple',
-      'hover:bg-gubi-purple hover:text-gubi-white',
-      'active:bg-gubi-purple-dark active:text-gubi-white',
-      'focus-visible:outline-gubi-purple',
+      'bg-transparent text-[#5A439B] border border-[#5A439B]',
+      'hover:bg-[#5A439B] hover:text-white',
+      'active:bg-[#4A3784] active:text-white',
+      'focus-visible:outline-[#5A439B]',
     ].join(' '),
     
     destructive: [
-      'bg-gubi-error text-gubi-white shadow-gubi-1',
-      'hover:bg-red-600 hover:shadow-gubi-2',
-      'active:bg-red-700 active:shadow-gubi-1',
-      'focus-visible:outline-gubi-error',
+      'bg-[#FF3B30] text-white shadow-sm',
+      'hover:bg-red-600 hover:shadow-md',
+      'active:bg-red-700 active:shadow-sm',
+      'focus-visible:outline-[#FF3B30]',
     ].join(' '),
     
     ghost: [
-      'bg-transparent text-gubi-gray-700 hover:bg-gubi-gray-100',
-      'active:bg-gubi-gray-300',
-      'focus-visible:outline-gubi-gray-500',
+      'bg-transparent text-[#3E4C59] hover:bg-[#F5F7FA]',
+      'active:bg-[#CBD2D9]',
+      'focus-visible:outline-[#7B8794]',
     ].join(' '),
   };
 

@@ -16,25 +16,25 @@ const Card: React.FC<CardProps> = ({
 }) => {
   // Base styles following Gubi Design System
   const baseStyles = [
-    'bg-gubi-white rounded-gubi-lg border border-gubi-gray-300',
-    'transition-all duration-gubi-base ease-gubi',
+    'bg-gubi-white rounded-lg border border-gubi-gray-300',
+    'transition-all duration-200 ease-out',
   ].join(' ');
 
   // Padding variants
   const paddingStyles = {
-    sm: 'p-gubi-5', // 16px
-    md: 'p-gubi-6', // 24px
-    lg: 'p-gubi-7', // 32px
+    sm: 'p-4', // 16px
+    md: 'p-6', // 24px
+    lg: 'p-8', // 32px
   };
 
   // Variant styles
   const variantStyles = {
-    default: 'shadow-gubi-1',
-    elevated: 'shadow-gubi-2',
+    default: 'shadow-sm',
+    elevated: 'shadow-md',
     interactive: [
-      'shadow-gubi-1 cursor-pointer',
-      'hover:shadow-gubi-2 hover:-translate-y-1',
-      'active:shadow-gubi-1 active:translate-y-0',
+      'shadow-sm cursor-pointer',
+      'hover:shadow-md hover:-translate-y-1',
+      'active:shadow-sm active:translate-y-0',
     ].join(' '),
   };
 
@@ -58,7 +58,7 @@ const CardHeader: React.FC<HTMLAttributes<HTMLDivElement>> = ({
   children,
   ...props
 }) => (
-  <div className={`mb-gubi-4 ${className}`} {...props}>
+  <div className={`mb-4 ${className}`} {...props}>
     {children}
   </div>
 );
@@ -68,7 +68,7 @@ const CardTitle: React.FC<HTMLAttributes<HTMLHeadingElement>> = ({
   children,
   ...props
 }) => (
-  <h3 className={`gubi-h3 text-gubi-gray-900 ${className}`} {...props}>
+  <h3 className={`text-xl font-semibold text-gubi-gray-900 ${className}`} {...props}>
     {children}
   </h3>
 );
@@ -78,7 +78,7 @@ const CardDescription: React.FC<HTMLAttributes<HTMLParagraphElement>> = ({
   children,
   ...props
 }) => (
-  <p className={`gubi-body-2 text-gubi-gray-700 ${className}`} {...props}>
+  <p className={`text-sm text-gubi-gray-700 ${className}`} {...props}>
     {children}
   </p>
 );
@@ -98,7 +98,7 @@ const CardFooter: React.FC<HTMLAttributes<HTMLDivElement>> = ({
   children,
   ...props
 }) => (
-  <div className={`mt-gubi-6 pt-gubi-4 border-t border-gubi-gray-300 ${className}`} {...props}>
+  <div className={`mt-6 pt-4 border-t border-gubi-gray-300 ${className}`} {...props}>
     {children}
   </div>
 );
